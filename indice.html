@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Martin Ivan</title>
+</head>
+<body>
+    <!--Sección Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/I.M/</h1>
+                    <nav id="nav" class="">
+                        <ul>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#miscursos" onclick="seleccionar(this)">MIS CURSOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Icono de las redes sociales-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Ivan Martin</span>, Desarrollador Front End y Hacker Etico</h2>
+                <p class="descripcion">Diseño y codifico cosas hermosas y sencillas, y me encanta lo que hago.</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Sobre Mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="../nuevo1/imagen/personal.jpg">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Ivan Martin</span></h2>
+            <h3>Desarrollador Front End y Hacker Etico</h3>
+            <p>Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador.
+                Ayudo a diseñadores, y pequeñas empresas a dar vida a sus ideas. Con tecnología de Figma, VS Code y café, convierto sus requisitos en sitios web.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">    
+          <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitios Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>Presentación de Maquetas y Paginas Web</p>
+            </div>
+        
+            <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-hat-cowboy"></i></span>
+            <h4>Consultoria Hacker Etico</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Linux</li>
+                <li>Windows</li>
+                <li>Web</li>
+            </ul>
+            <p>Diagnosticos y auditoria de Sitios Web</p>
+            </div>
+       
+            
+            <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-hat-cowboy"></i></span>
+            <h4>Informatica Forence</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Linux</li>
+                <li>Windows</li>
+                <li>Web</li>
+            </ul>
+            <p>Extacción de evidencia de Equipos</p>
+            </div>
+        </div>
+        
+       
+        
+    </section>
+
+    <!-- Sección Habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>Habilidades</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Seguridad Linux/Windows</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="slw" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Informatica Forence</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="if" class="barra-progreso3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Portafolio-->
+    <section id="miscursos">
+        <h3 class="titulo-sección">MIS CURSOS</h3>
+        <div class="fila">
+            <div class="curso">
+                <div class="overlay"></div>
+                <img src="../nuevo1/imagen/Informatica forence.jpg">
+                <div class="info">
+                    <h4>Informatica Forence</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="curso">
+                <div class="overlay"></div>
+                <img src="../nuevo1/imagen/Linux-admi.jpg">
+                <div class="info">
+                    <h4>Linux Administrador</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="curso">
+                <div class="overlay"></div>
+                <img src="../nuevo1/imagen/Mobile.jpg">
+                <div class="info">
+                    <h4>Mobile Hacking</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactar ahora</h3>
+        <div class="contenedor-form">
+            <div class="fila mitad">
+                <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                <input type="text" placeholder="Dirección de Email" class="input-mitad">
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Tema..." class="input-full">
+            </div>
+            <div class="fila">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+            </div>
+           
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+        </div>
+    </section>
+
+    <!--Sección Footers-->
+    <footer>
+     <p>Todos los derechos reservados - 2022</p>
+
+      <!--Icono de las redes sociales-->
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
